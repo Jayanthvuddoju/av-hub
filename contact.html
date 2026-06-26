@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | AV HUB Community</title>
+    <!-- Royal Design Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="description" content="Get in touch with AV HUB recruitment community. Reach out for membership queries, event partnership proposals, and general inquiries." />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="royal-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon">AV HUB</div>
+          <div class="logo-sub">Community</div>
+        </a>
+        <nav class="nav-container">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="community.html" class="nav-link">Community</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="resources.html" class="nav-link">Resources</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="join.html" class="nav-link btn btn-outline btn-header">Join Us</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Title / Hero -->
+    <section class="hero-section" style="min-height: 45vh; padding: 6rem 2rem 4rem 2rem;">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+        <div class="hero-text-content" style="max-width: 800px; margin: 0 auto;">
+          <div class="hero-badge">
+            <i class="fa-solid fa-envelope-open-text"></i> Connect With Our Team
+          </div>
+          <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Contact <span class="gold-gradient-text">AV HUB</span></h1>
+          <p class="hero-desc" style="font-size: 1.15rem; margin: 0 auto;">
+            Have questions about membership, events, or partnerships? Reach out and our community committee will assist you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact Details and Form -->
+    <section style="border-bottom: var(--border-royal);">
+      <div class="container">
+        <div class="split-layout" style="grid-template-columns: 0.9fr 1.1fr;">
+          <!-- Left: Contact Details -->
+          <div class="text-content" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div>
+              <div class="section-tagline" style="justify-content: flex-start;">Reach Out</div>
+              <h2 class="tab-title" style="font-size: 2.2rem; margin-bottom: 1.5rem; text-align: left;">Contact <span class="gold-gradient-text">Information</span></h2>
+              <p style="color: var(--color-text-muted);">
+                We are always excited to hear from recruiters, staffing managers, and entrepreneurs. Use the details below or drop us a message through the contact form.
+              </p>
+            </div>
+
+            <!-- Detail Cards -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem;">
+                <div class="card-icon" style="margin: 0; font-size: 1.5rem;"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-white); font-family: var(--font-royal);">Our Location</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.9rem;">Cyber Towers, Hitech City, Madhapur, Hyderabad, TS, India</p>
+                </div>
+              </div>
+
+              <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem;">
+                <div class="card-icon" style="margin: 0; font-size: 1.5rem;"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-white); font-family: var(--font-royal);">Email Correspondence</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.9rem;">General Queries: info@avhub.in<br/>Partnerships: partners@avhub.in</p>
+                </div>
+              </div>
+
+              <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem;">
+                <div class="card-icon" style="margin: 0; font-size: 1.5rem;"><i class="fa-solid fa-phone-volume"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-white); font-family: var(--font-royal);">Call Helpline</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.9rem;">Mon-Fri, 9:00 AM - 6:00 PM IST<br/>+91 90000 12345</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form -->
+          <div>
+            <div class="form-card" style="padding: 3rem 2rem;">
+              <form class="royal-form" id="contact-message-form">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Your Name</label>
+                  <input type="text" class="form-control" id="contact-name" name="name" required placeholder="e.g., Vikram Dev" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address</label>
+                  <input type="email" class="form-control" id="contact-email" name="email" required placeholder="vikram@company.com" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">Inquiry Subject</label>
+                  <select class="form-control" id="contact-subject" name="subject" required>
+                    <option value="" disabled selected>Select subject</option>
+                    <option value="Membership">Membership Admission</option>
+                    <option value="Events">Event Registration / Speaking</option>
+                    <option value="Partnership">Corporate Sponsorship</option>
+                    <option value="General">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-msg">Message details</label>
+                  <textarea class="form-control" id="contact-msg" name="message" required placeholder="Write your query details here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-royal" style="width: 100%;">Send Message</button>
+              </form>
+
+              <!-- Success State -->
+              <div class="form-success-container">
+                <i class="fa-solid fa-paper-plane success-icon"></i>
+                <h3 class="success-title" style="font-size: 1.4rem; margin-bottom: 0.5rem;" data-template="Thank you, {name}!">Message Sent</h3>
+                <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                  Your message has been successfully transmitted to the AV HUB steering committee. We will review your query and reply within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="royal-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4 class="gold-gradient-text">AV HUB</h4>
+          <p class="footer-desc">Hyderabad's premier platform for ambitious recruiters. We connect, collaborate, and grow the next generation of recruitment leaders.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Who We Serve</h5>
+          <ul class="footer-links">
+            <li><a href="community.html">Bench Sales Recruiters</a></li>
+            <li><a href="community.html">US IT Recruiters</a></li>
+            <li><a href="community.html">Talent Acquisition</a></li>
+            <li><a href="community.html">Staffing Managers</a></li>
+            <li><a href="community.html">Entrepreneurs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hyderabad, TS, India</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> info@avhub.in</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> +91 90000 12345</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AV HUB Community. All Rights Reserved.</p>
+        <p>Handcrafted with Royal Theme</p>
+      </div>
+    </footer>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

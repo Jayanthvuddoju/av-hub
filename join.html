@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | AV HUB Community</title>
+    <!-- Royal Design Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="description" content="Apply to join AV HUB, Hyderabad's home for ambitious recruitment professionals. Expand your network, learn from industry leaders, and accelerate your staffing career." />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="royal-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon">AV HUB</div>
+          <div class="logo-sub">Community</div>
+        </a>
+        <nav class="nav-container">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="community.html" class="nav-link">Community</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="resources.html" class="nav-link">Resources</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="join.html" class="nav-link btn btn-outline btn-header">Join Us</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Title / Hero -->
+    <section class="hero-section" style="min-height: 45vh; padding: 6rem 2rem 4rem 2rem;">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+        <div class="hero-text-content" style="max-width: 800px; margin: 0 auto;">
+          <div class="hero-badge">
+            <i class="fa-solid fa-gem"></i> Exclusive Membership
+          </div>
+          <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Join <span class="gold-gradient-text">AV HUB</span></h1>
+          <p class="hero-desc" style="font-size: 1.15rem; margin: 0 auto;">
+            Become Part Of A Community That Helps You Grow. <br/>
+            Whether you're starting your career, leading teams, or building a staffing business, AV HUB provides the network, mentorship, and opportunities to help you succeed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Why Join -->
+    <section style="border-bottom: var(--border-royal);">
+      <div class="container">
+        <div class="section-tagline">Membership Values</div>
+        <h2 class="section-title">Why <span class="gold-gradient-text">Join?</span></h2>
+        
+        <div class="card-grid">
+          <div class="royal-card">
+            <div class="card-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+            <h3 class="card-title">Expand Your Network</h3>
+            <p class="card-desc">Connect with recruiters, hiring managers, sales professionals, and staffing entrepreneurs in Hyderabad.</p>
+          </div>
+          <div class="royal-card">
+            <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3 class="card-title">Learn From Leaders</h3>
+            <p class="card-desc">Access executive mentorship, benchmark data reports, and direct industry knowledge sharing.</p>
+          </div>
+          <div class="royal-card">
+            <div class="card-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
+            <h3 class="card-title">Grow Your Career</h3>
+            <p class="card-desc">Discover placement options, learn new compliance frameworks, and develop key leadership skills.</p>
+          </div>
+          <div class="royal-card">
+            <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3 class="card-title">Collaborate With Pros</h3>
+            <p class="card-desc">Build meaningful relationships, share talent lists, and co-broker enterprise opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Application Form -->
+    <section style="background-color: var(--color-bg-secondary); border-bottom: var(--border-royal);">
+      <div class="container">
+        <div class="section-tagline">Membership Application</div>
+        <h2 class="section-title">Apply for <span class="gold-gradient-text">Admission</span></h2>
+        <p style="text-align: center; max-width: 600px; margin: -1.5rem auto 3rem auto; color: var(--color-text-muted);">
+          Ready To Build Your Future? Submit your details below to request admission to Hyderabad's premier staffing network.
+        </p>
+
+        <div class="form-card">
+          <form class="royal-form" id="membership-apply-form">
+            <div class="form-group">
+              <label class="form-label" for="apply-name">Full Name</label>
+              <input type="text" class="form-control" id="apply-name" name="name" required placeholder="e.g., Arjun Rao" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="apply-email">Work Email</label>
+              <input type="email" class="form-control" id="apply-email" name="email" required placeholder="arjun@agencyname.com" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="apply-phone">Phone Number</label>
+              <input type="tel" class="form-control" id="apply-phone" name="phone" required placeholder="+91 XXXXX XXXXX" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="apply-linkedin">LinkedIn Profile URL</label>
+              <input type="url" class="form-control" id="apply-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/username" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Primary Expertise</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="Bench Sales" />
+                  <span>Bench Sales</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="US IT Recruitment" />
+                  <span>US IT Recruitment</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="Talent Acquisition" />
+                  <span>Talent Acquisition</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="Business Development" />
+                  <span>Business Development</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="Staffing Manager" />
+                  <span>Staffing Manager</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="expertise" value="Entrepreneur" />
+                  <span>Entrepreneur</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="apply-exp">Years of Experience</label>
+              <select class="form-control" id="apply-exp" name="experience" required>
+                <option value="" disabled selected>Select experience level</option>
+                <option value="0-2">0 - 2 years (Associate)</option>
+                <option value="2-5">2 - 5 years (Specialist)</option>
+                <option value="5-8">5 - 8 years (Lead/Manager)</option>
+                <option value="8+">8+ years (Director/Founder)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="apply-reason">Why do you want to join AV HUB?</label>
+              <textarea class="form-control" id="apply-reason" name="reason" placeholder="Tell us how you hope to contribute and what you want to learn..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" name="terms" required />
+                <span style="font-size: 0.85rem; color: var(--color-text-muted);">I agree to uphold AV HUB community values of collaboration, continuous learning, and professional integrity.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-royal" style="width: 100%; margin-top: 1rem;">Submit Application</button>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success-container">
+            <i class="fa-solid fa-crown success-icon"></i>
+            <h3 class="success-title" style="font-size: 1.5rem; margin-bottom: 0.5rem;" data-template="Welcome to the Circle, {name}!">Application Submitted</h3>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Thank you for applying to AV HUB. Our membership committee will review your LinkedIn credentials and work profile. 
+              We will reach out via email within 48 hours to confirm your membership status and invitation code.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="royal-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4 class="gold-gradient-text">AV HUB</h4>
+          <p class="footer-desc">Hyderabad's premier platform for ambitious recruiters. We connect, collaborate, and grow the next generation of recruitment leaders.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Who We Serve</h5>
+          <ul class="footer-links">
+            <li><a href="community.html">Bench Sales Recruiters</a></li>
+            <li><a href="community.html">US IT Recruiters</a></li>
+            <li><a href="community.html">Talent Acquisition</a></li>
+            <li><a href="community.html">Staffing Managers</a></li>
+            <li><a href="community.html">Entrepreneurs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hyderabad, TS, India</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> info@avhub.in</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> +91 90000 12345</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AV HUB Community. All Rights Reserved.</p>
+        <p>Handcrafted with Royal Theme</p>
+      </div>
+    </footer>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
