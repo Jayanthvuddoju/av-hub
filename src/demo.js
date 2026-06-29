@@ -121,16 +121,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // GSAP ScrollTrigger Timeline
+    const headerHeight = document.querySelector('.royal-header')?.offsetHeight || 80;
+    
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#home-hero",
-        start: "top top",
-        end: "+=3000", // Increased scroll distance to accommodate the fade-to-black
+        start: `top top+=${headerHeight}`,
+        end: "+=4000", // Increased scroll distance to accommodate the pan
         scrub: 0.5,
         pin: true,
         pinSpacing: true,
         anticipatePin: 1
       }
+    });
+
+    // 0. Pan the image down to reveal the bottom (street level)
+    tl.to("#demo-canvas", {
+      objectPosition: "50% 100%",
+      ease: "power1.inOut",
+      duration: 1.5 // 1.5 parts of the timeline for the pan
     });
 
     // 1. Scrub through frames

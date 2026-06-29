@@ -328,7 +328,8 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Hero Layout --- */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   z-index: 10;
@@ -579,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Section: Final CTA Banner --- */
 .royal-banner {
-  background: linear-gradient(135deg, #0e0e14 0%, #060608 100%);
+  background-size: cover;
   border-top: var(--border-royal);
   border-bottom: var(--border-royal);
   position: relative;
@@ -1285,6 +1286,7 @@ textarea.form-control {
   top: 0;
   left: 0;
   object-fit: cover;
+  object-position: 50% 0%;
   pointer-events: none;
 }
 
