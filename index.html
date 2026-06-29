@@ -39,13 +39,18 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home-hero">
+      <!-- Loading Overlay -->
+      <div id="loading-indicator" class="loading-overlay">
+        <div class="spinner"></div>
+        <div id="loading-text" class="loading-text">Loading... 0%</div>
+      </div>
+      <!-- Background Canvas -->
+      <canvas id="demo-canvas"></canvas>
       <div class="hero-bg-overlay"></div>
-      <div class="hero-container">
+      <div class="black-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 2; opacity: 0; pointer-events: none;"></div>
+      <div class="hero-container" style="position: relative; z-index: 5;">
         <div class="hero-text-content">
-          <div class="hero-badge">
-            <i class="fa-solid fa-crown"></i> India's Fastest Growing Recruitment Community
-          </div>
           <h1 class="hero-title">Building Tomorrow's <br/><span class="gold-gradient-text">Staffing Leaders</span></h1>
           <p class="hero-desc">
             AV HUB is Hyderabad's home for ambitious recruiters, talent acquisition specialists, bench sales professionals, staffing managers, and future recruitment entrepreneurs. 
@@ -457,5 +462,6 @@
 
     <!-- Main Module Script -->
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/demo.js"></script>
   </body>
 </html>

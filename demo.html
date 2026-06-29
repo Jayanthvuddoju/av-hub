@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AV HUB | Demo</title>
+    <!-- Royal Design Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="royal-header">
+      <div class="header-container">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon">AV HUB</div>
+          <div class="logo-sub">Community</div>
+        </a>
+        <nav class="nav-container">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="community.html" class="nav-link">Community</a></li>
+            <li><a href="events.html" class="nav-link">Events</a></li>
+            <li><a href="resources.html" class="nav-link">Resources</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="join.html" class="nav-link btn btn-outline btn-header">Join Us</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Cinematic Scroll Animation Area -->
+    <main>
+      <div id="canvas-container" class="canvas-container">
+        <!-- Loading Overlay -->
+        <div id="loading-indicator" class="loading-overlay">
+          <div class="spinner"></div>
+          <div id="loading-text" class="loading-text">Loading... 0%</div>
+        </div>
+        <canvas id="demo-canvas"></canvas>
+      </div>
+      <!-- Spacer to allow scrolling past the pinned area -->
+      <div style="height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--color-bg-base);">
+        <h2 style="font-family: var(--font-royal); font-size: 2rem;">Experience the Future.</h2>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="royal-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4 class="gold-gradient-text">AV HUB</h4>
+          <p class="footer-desc">Hyderabad's premier platform for ambitious recruiters. We connect, collaborate, and grow the next generation of recruitment leaders.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Who We Serve</h5>
+          <ul class="footer-links">
+            <li><a href="community.html">Bench Sales Recruiters</a></li>
+            <li><a href="community.html">US IT Recruiters</a></li>
+            <li><a href="community.html">Talent Acquisition</a></li>
+            <li><a href="community.html">Staffing Managers</a></li>
+            <li><a href="community.html">Entrepreneurs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hyderabad, TS, India</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> info@avhub.in</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> +91 90000 12345</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AV HUB Community. All Rights Reserved.</p>
+        <p>Handcrafted with Royal Theme</p>
+      </div>
+    </footer>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/demo.js"></script>
+  </body>
+</html>

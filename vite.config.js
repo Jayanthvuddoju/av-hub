@@ -11,7 +11,8 @@ export default defineConfig({
         events: resolve(__dirname, 'events.html'),
         resources: resolve(__dirname, 'resources.html'),
         join: resolve(__dirname, 'join.html'),
-        contact: resolve(__dirname, 'contact.html')
+        contact: resolve(__dirname, 'contact.html'),
+        demo: resolve(__dirname, 'demo.html')
       }
     }
   }

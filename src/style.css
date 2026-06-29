@@ -31,7 +31,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* Required for Lenis smooth scrolling */
   background-color: var(--color-bg-primary);
   color: var(--color-text-light);
   font-family: var(--font-body);
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.25rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -328,9 +328,11 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Hero Layout --- */
 .hero-section {
   position: relative;
-  min-height: 85vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 10;
+  background-color: var(--color-bg-base);
   padding: 4rem 2rem;
   border-bottom: var(--border-royal);
   overflow: hidden;
@@ -358,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 4rem;
   align-items: center;
+  padding-top: 6rem;
 }
 
 .hero-badge {
@@ -1264,4 +1267,55 @@ textarea.form-control {
   .form-card {
     padding: 2rem;
   }
+}
+
+/* --- Demo Canvas Styles --- */
+.canvas-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#demo-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--color-gold-base);
+  animation: rotate 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+.loading-text {
+  font-family: var(--font-body);
+  color: var(--color-text-white);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
 }
