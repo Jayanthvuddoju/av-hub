@@ -1,4 +1,8 @@
 import './style.css';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
   initGlobalNavigation();
@@ -6,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initResourcesFilter();
   initRegisterModal();
   initFormSubmissions();
+  initTimelineAnimation();
 });
 
 /* --- Global Navigation Logic --- */
@@ -253,6 +258,42 @@ function initFormSubmissions() {
           }
         }
       }, 1200);
+    });
+  });
+}
+
+/* --- Timeline Scroll Animation --- */
+function initTimelineAnimation() {
+  const timeline = document.querySelector('.timeline');
+  if (!timeline) return;
+
+  // Animate the center line extending downwards as user scrolls
+  gsap.to(timeline, {
+    '--line-height': '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: timeline,
+      start: 'top 60%',
+      end: 'bottom 60%',
+      scrub: 0.5
+    }
+  });
+
+  // Animate each timeline card popping in slowly after the line passes it
+  const items = gsap.utils.toArray('.timeline-item');
+  items.forEach((item, i) => {
+    gsap.to(item, {
+      opacity: 1,
+      y: 0,
+      duration: 1.5, // Slower fade in
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: item,
+        // The line tip is always at 60% of the viewport. 
+        // Triggering at 50% means the line has already passed the card's dot.
+        start: 'top 50%', 
+        toggleActions: 'play none none reverse'
+      }
     });
   });
 }

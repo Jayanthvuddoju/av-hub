@@ -90,11 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Wait until image has dimensions
     if (img.width === 0 || img.height === 0) return;
 
-    // Set canvas dimensions to the true native resolution of the image
-    // CSS object-fit: cover will handle scaling it up beautifully via the browser's compositor
-    if (canvas.width !== img.width || canvas.height !== img.height) {
+    // We crop out the bottom 5% of the image to hide the watermark and dark space
+    const cropRatio = 0.95;
+    const croppedHeight = img.height * cropRatio;
+
+    if (canvas.width !== img.width || canvas.height !== croppedHeight) {
       canvas.width = img.width;
-      canvas.height = img.height;
+      canvas.height = croppedHeight;
     }
 
     // Use good image smoothing
@@ -102,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     context.imageSmoothingQuality = 'high';
 
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(img, 0, 0);
+    context.drawImage(img, 0, 0, img.width, croppedHeight, 0, 0, canvas.width, canvas.height);
   }
 
   function initAnimation() {
@@ -122,6 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // GSAP ScrollTrigger Timeline
     const headerHeight = document.querySelector('.royal-header')?.offsetHeight || 80;
+    
+    // Dynamically set hero section height to perfectly fill the rest of the screen
+    const heroSection = document.getElementById('home-hero');
+    if (heroSection) {
+      heroSection.style.height = `${window.innerHeight - headerHeight}px`;
+      heroSection.style.minHeight = `${window.innerHeight - headerHeight}px`;
+    }
     
     const tl = gsap.timeline({
       scrollTrigger: {

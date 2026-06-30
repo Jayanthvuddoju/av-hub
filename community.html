@@ -16,8 +16,7 @@
     <header class="royal-header">
       <div class="header-container">
         <a href="index.html" class="logo-link">
-          <div class="logo-icon">AV HUB</div>
-          <div class="logo-sub">Community</div>
+          <img src="/src/assets/av-hub-logo.png" alt="AV HUB Logo" class="nav-logo" />
         </a>
         <nav class="nav-container">
           <ul class="nav-links">
@@ -39,15 +38,15 @@
     </header>
 
     <!-- Page Title / Hero -->
-    <section class="hero-section" style="min-height: 45vh; padding: 6rem 2rem 4rem 2rem;">
+    <section class="hero-section" style="min-height: 45vh; padding: 6rem 2rem 4rem 2rem; background: url('/src/assets/hitechcity.png') center/cover no-repeat;">
       <div class="hero-bg-overlay"></div>
-      <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
-        <div class="hero-text-content" style="max-width: 800px; margin: 0 auto;">
+      <div class="hero-container">
+        <div class="hero-text-content">
           <div class="hero-badge">
             <i class="fa-solid fa-users"></i> A Community Built For Growth
           </div>
           <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Our <span class="gold-gradient-text">Community</span></h1>
-          <p class="hero-desc" style="font-size: 1.15rem; margin: 0 auto;">
+          <p class="hero-desc" style="font-size: 1.15rem; margin: 0;">
             AV HUB brings together professionals from every corner of the staffing ecosystem. 
             Whether you're looking to learn, network, find mentors, or collaborate with industry leaders, you'll find a place within our community.
           </p>
@@ -107,41 +106,45 @@
     </section>
 
     <!-- Section: Community Benefits -->
-    <section style="background-color: var(--color-bg-secondary); border-bottom: var(--border-royal);">
-      <div class="container">
+    <section style="position: relative; overflow: hidden; background-color: var(--color-bg-primary); border-bottom: var(--border-royal);">
+      <!-- Decorative glowing orbs for glassmorphism effect -->
+      <div style="position: absolute; top: -20%; left: -10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 60%); filter: blur(50px); z-index: 0; pointer-events: none; animation: liquidBlob1 15s infinite ease-in-out alternate;"></div>
+      <div style="position: absolute; bottom: -20%; right: -10%; width: 60%; height: 70%; background: radial-gradient(circle, rgba(170, 124, 17, 0.1) 0%, transparent 60%); filter: blur(60px); z-index: 0; pointer-events: none; animation: liquidBlob2 18s infinite ease-in-out alternate;"></div>
+      
+      <div class="container" style="position: relative; z-index: 1;">
         <div class="section-tagline">Why Belong</div>
         <h2 class="section-title">Community <span class="gold-gradient-text">Benefits</span></h2>
         
         <div class="card-grid">
-          <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
+          <div class="royal-card glass-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
             <div class="card-icon" style="margin: 0;"><i class="fa-solid fa-circle-nodes"></i></div>
             <div>
               <h3 class="card-title">Networking Opportunities</h3>
               <p class="card-desc">Build meaningful industry relationships. Attend local mixers and establish trust-based staffing partnerships.</p>
             </div>
           </div>
-          <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
+          <div class="royal-card glass-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
             <div class="card-icon" style="margin: 0;"><i class="fa-solid fa-chalkboard-user"></i></div>
             <div>
               <h3 class="card-title">Mentorship Programs</h3>
               <p class="card-desc">Learn from experienced leaders. Pair up with staffing veterans who have successfully navigated agency growth cycles.</p>
             </div>
           </div>
-          <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
+          <div class="royal-card glass-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
             <div class="card-icon" style="margin: 0;"><i class="fa-solid fa-book-open"></i></div>
             <div>
               <h3 class="card-title">Knowledge Sharing</h3>
               <p class="card-desc">Stay informed with industry insights. Gain access to weekly bulletins, compensation surveys, and market reports.</p>
             </div>
           </div>
-          <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
+          <div class="royal-card glass-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem;">
             <div class="card-icon" style="margin: 0;"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
             <div>
               <h3 class="card-title">Leadership Development</h3>
               <p class="card-desc">Prepare yourself for greater opportunities. Master recruitment execution, delegation, and executive leadership.</p>
             </div>
           </div>
-          <div class="royal-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem; grid-column: span 2;">
+          <div class="royal-card glass-card" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem; grid-column: span 2;">
             <div class="card-icon" style="margin: 0;"><i class="fa-solid fa-handshake-angle"></i></div>
             <div>
               <h3 class="card-title">Collaboration</h3>
@@ -202,7 +205,7 @@
     <footer class="royal-footer">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4 class="gold-gradient-text">AV HUB</h4>
+          <img src="/src/assets/av-hub-logo.png" alt="AV HUB Logo" class="footer-logo" />
           <p class="footer-desc">Hyderabad's premier platform for ambitious recruiters. We connect, collaborate, and grow the next generation of recruitment leaders.</p>
           <div class="footer-socials">
             <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
